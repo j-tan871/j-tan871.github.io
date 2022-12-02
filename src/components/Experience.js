@@ -1,13 +1,11 @@
 import {
   Box,
-  Heading,
-  Text,
-  Stack
+  Heading
 } from '@chakra-ui/react';
 
 import ExperienceItem from './ExperienceItem';
 
-const Experience = () => {
+const Experience = (props) => {
   const experiences = [
     {
       title: 'Software Engineer Intern',
@@ -41,6 +39,8 @@ const Experience = () => {
   ]
   return (
     <Box
+      ref={props.experienceRef}
+      class='experience'
       px={{ base: 2, md: 5, lg: 10 }}
       py={{ base: 2, md: 5, lg: 10 }}>
       <Heading>Experience</Heading>

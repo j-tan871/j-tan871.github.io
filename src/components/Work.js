@@ -1,23 +1,19 @@
 import {
   Box, 
-  Text, 
   Heading, 
   Grid, 
   GridItem, 
-  useColorMode, 
-  Link, 
-  Image
 } from '@chakra-ui/react';
 
 import { useState, useEffect } from 'react';
 
 import ProjectCard from './ProjectCard';
 
-const Work = () => {
+const Work = (props) => {
   const projects = [
     {
       title: 'Explorify',
-      tags: ['Passion Project', 'Web Development'],
+      tags: ['Passion Project', 'Web Development', 'Prototyping'],
       subtitle: `Developing a web application that ranks and recommends an artist's songs based on a user's Spotify Profile`,
       image: '/Explorify_Card.png',
       link: '/development',
@@ -69,10 +65,12 @@ const Work = () => {
 
   return (
     <Box 
+      ref={props.projectsRef}
+      class='work'
       px={{ base: 2, md: 5, lg: 10}} 
       py={{ base: 2, md: 5, lg: 10}}
       >
-      {/* <Heading as='h1' pb={{ base: 1, md: 2, lg: 3}}>Work</Heading> */}
+      <Heading>Work</Heading>
       <Grid align='stretch' templateColumns={{ base: 'repeat(2, 1fr)', md: 'repeat(2, 1fr)'}} gap={4}>
         {
           projects.map((project, idx) => {
@@ -88,18 +86,6 @@ const Work = () => {
           })
         }
       </Grid>
-      {/* {scrollPosition > 500 && (<Link href='/#top'>
-            <Box position='fixed'
-                bottom='20px'
-                right={['16px', '84px']}
-                zIndex={1}
-            >
-                <Image src='images/icons/top.svg'
-                    w='60px'
-                    h='60px'
-                />
-            </Box>
-        </Link>)} */}
     </Box>
   )
 }

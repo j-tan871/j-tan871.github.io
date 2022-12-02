@@ -1,20 +1,12 @@
 import {
   Card,
-  CardHeader,
   CardBody,
-  CardFooter,
   Text,
   Heading,
   Stack,
-  Divider,
-  ButtonGroup,
-  Button,
   Image, 
   Tag, 
-  HStack,
   useColorMode, 
-  Wrap,
-  Box
 } from '@chakra-ui/react';
 
 import { Link } from 'react-router-dom';

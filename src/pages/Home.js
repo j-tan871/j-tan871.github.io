@@ -1,14 +1,14 @@
-import { useState, useEffect } from 'react';
-
 import About from '../components/About';
 import Work from '../components/Work';
 import Experience from '../components/Experience';
+import Contact from '../components/Contact';
 
-const Home = () => {
+const Home = (props) => {
   return <>
     <About />
-    <Work />
-    <Experience />
+    <Work projectsRef={props.projectsRef}/>
+    <Experience experienceRef={props.experienceRef}/>
+    <Contact contactRef={props.contactRef}/>
   </>
 }
 
