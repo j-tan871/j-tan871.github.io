@@ -27,6 +27,7 @@ const ExperienceItem = (props) => {
           <Text as='b'>{props.title}</Text>
           <br />
           <Text as='i'>{props.company}</Text>
+          <Text>{props.date}</Text>
           <Text pb={2}></Text>
           {
             props.description.map((bullet, idx) => {
