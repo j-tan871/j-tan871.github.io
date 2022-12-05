@@ -50,7 +50,7 @@ const Navigation = (props) => {
       position='fixed'
       zIndex={20}
       backdropFilter="blur(5px)"
-      w={{ base: '100%', xl: '8xl' }}
+      w={{ base: '100%' }}
     >
       <Link1 to='/' onClick={handleScrollTop}>
         <Link>

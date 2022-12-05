@@ -17,7 +17,7 @@ const Experience = (props) => {
         '- Implemented and deployed a data pipeline that processes 6 billion+ rows of payment attempt data daily',
         '- Developed and deployed web application to query credentials for charge authentication (gRPC, Java, React)',
         '- Cards Authorization team'],
-      src: '/stripe.png'
+      src: '/Stripe.png'
     },
     {
       title: 'Software Engineer Intern',

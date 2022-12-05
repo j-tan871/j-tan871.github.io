@@ -3,6 +3,7 @@ import {
   Heading,
   Box, 
   useColorMode,
+  Link,
 } from '@chakra-ui/react';
 
 const About = (props) => {
@@ -20,8 +21,28 @@ const About = (props) => {
         fontSize={{ base: 'lg', md: 'xl', lg: '2xl' }}
         color={ colorMode === 'dark' ? 'gray.400' : 'gray.800'}
       >
-        Student studying Computer Science at Brown. Previous SWE intern @ Stripe, Amazon.
-        Looking for backend and full-stack software engineering roles!
+        Senior studying Computer Science at {' '}
+        <Text as='b' color={colorMode === 'light' ? 'red.600' : 'red.200'}>
+          <Link target="_blank" rel="noopener noreferrer" href='https://cs.brown.edu/'>
+              Brown
+          </Link> 
+        </Text>. Incoming SWE @{' '}
+        <Text as='b' color={colorMode === 'light' ? 'purple.600' : 'purple.200'}>
+          <Link target="_blank" rel="noopener noreferrer" href='https://stripe.com/'>
+              Stripe
+          </Link>
+        </Text>
+        . Previous SWE intern @{' '} 
+        <Text as='b' color={colorMode === 'light' ? 'purple.600' : 'purple.200'}>
+          <Link target="_blank" rel="noopener noreferrer" href='https://stripe.com/'>
+              Stripe
+          </Link>
+        </Text>,{' '}
+        <Text as='b' color={colorMode === 'light' ? 'orange.500' : 'orange.200'}>
+          <Link target="_blank" rel="noopener noreferrer" href='https://amazon.com/'>
+              Amazon
+          </Link>
+        </Text>. 
       </Text>
     </Box>
   )

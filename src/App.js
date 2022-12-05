@@ -39,15 +39,17 @@ function App() {
             <Route path='/' element={<Home projectsRef={projectsRef} experienceRef={experienceRef} contactRef={contactRef} />}/>
           </Routes>
           <Button 
-            colorScheme='black' 
+            // colorScheme='black' 
             onClick={handleScrollTop} 
-            variant='outline'
+            variant='solid'
             size='sm'
             position='fixed'
             bottom='20px'
             right='20px'
             zIndex={20}
-            rightIcon={<ArrowUpIcon />}>
+            rightIcon={<ArrowUpIcon />}
+            // bgColor='gray.700'
+            >
               Scroll to Top
           </Button>
         </Box>
