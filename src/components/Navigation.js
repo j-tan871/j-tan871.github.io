@@ -19,12 +19,15 @@ import {
 
 import {
   Link as Link1, 
+  useLocation
 } from 'react-router-dom';
 
 const Navigation = (props) => {
   const isDesktop = useBreakpointValue({ base: false, lg: true })
 
   const { colorMode, toggleColorMode } = useColorMode();
+
+  const location = useLocation().pathname;
 
   const handleScrollTop = () => {
     window.scrollTo({
@@ -50,7 +53,8 @@ const Navigation = (props) => {
       position='fixed'
       zIndex={20}
       backdropFilter="blur(5px)"
-      w={{ base: '100%' }}
+      w={'100%'}
+      // w={{ base: '100%', lg: '6xl' }}
     >
       <Link1 to='/' onClick={handleScrollTop}>
         <Link>
@@ -68,7 +72,7 @@ const Navigation = (props) => {
         style={{ display: isDesktop ? 'flex' : 'none' }}
       />
       <HStack>
-        <Link1 to='/#projects'>
+        <Link1 to='/#projects' style={{ display: location === '/' ? 'flex' : 'none'}}>
           <Link 
             fontSize={{ base: 'lg', md: 'xl', lg: '2xl' }} 
             pr={{ base: 1, md: 2, lg: 3 }} 
@@ -78,7 +82,7 @@ const Navigation = (props) => {
             Projects
           </Link>
         </Link1>
-        <Link1 to='#experience'>
+        <Link1 to='/#experience' style={{ display: location === '/' ? 'flex' : 'none'}}>
         <Link 
           fontSize={{ base: 'lg', md: 'xl', lg: '2xl' }} 
           pr={{ base: 1, md: 2, lg: 3 }} 
@@ -88,7 +92,7 @@ const Navigation = (props) => {
             Experience
           </Link>
         </Link1>
-        <Link1 to='#contact'>
+        <Link1 to='/#contact' style={{ display: location === '/' ? 'flex' : 'none'}}>
           <Link 
             fontSize={{ base: 'lg', md: 'xl', lg: '2xl' }} 
             pr={{ base: 1, md: 2, lg: 3 }} 

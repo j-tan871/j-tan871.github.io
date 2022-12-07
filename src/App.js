@@ -11,7 +11,9 @@ import ResponsiveRedesign from './pages/ResponsiveRedesign';
 import Iterative from './pages/Iterative';
 import PartySafety from './pages/PartySafety';
 import Development from './pages/Development';
+import Explorify from './pages/Explorify';
 import theme from './theme';
+import ScrollTop from './components/ScrollTop';
 
 function App() {
   const projectsRef = useRef(null);
@@ -28,14 +30,16 @@ function App() {
 
   return (
     <ChakraProvider theme={theme}>
+      <ScrollTop />
       <Center style={{ transition: "background-color 200ms linear"}}>
-        <Box w={{ base: '100%', xl: '8xl'}}>
+        <Box w={{ base: '100%' }}>
           <Navigation projectsRef={projectsRef} experienceRef={experienceRef} contactRef={contactRef} />
           <Routes>
             <Route path='responsive' element={<ResponsiveRedesign />} />
             <Route path='iterative' element={<Iterative />} />
             <Route path='partysafety' element={<PartySafety />} />
             <Route path='development' element={<Development />} />
+            <Route path='explorify' element={<Explorify />} />
             <Route path='/' element={<Home projectsRef={projectsRef} experienceRef={experienceRef} contactRef={contactRef} />}/>
           </Routes>
           <Button 

@@ -12,10 +12,10 @@ const Experience = (props) => {
       company: 'Stripe',
       date: 'May 2022 - August 2022',
       description: [
-        '- Created and deployed an automated SignalFX dashboard infrastructure that uses a novel CSV parsing solution to increase card authorization rate observability for Stripe’s top 25 merchants',
-        '- Wrote a shell script to automate the dashboard creation process, including querying merchant data and generating a Terraform plan and pull request, reducing engineer time required by 75% (Terraform, Ruby)',
-        '- Implemented and deployed a data pipeline that processes 6 billion+ rows of payment attempt data daily',
-        '- Developed and deployed web application to query credentials for charge authentication (gRPC, Java, React)',
+        // '- Created and deployed an automated SignalFX dashboard infrastructure that uses a novel CSV parsing solution to increase card authorization rate observability for Stripe’s top 25 merchants',
+        // '- Wrote a shell script to automate the dashboard creation process, including querying merchant data and generating a Terraform plan and pull request, reducing engineer time required by 75% (Terraform, Ruby)',
+        // '- Implemented and deployed a data pipeline that processes 6 billion+ rows of payment attempt data daily',
+        // '- Developed and deployed web application to query credentials for charge authentication (gRPC, Java, React)',
         '- Cards Authorization team'],
       src: '/Stripe.png'
     },
@@ -24,9 +24,9 @@ const Experience = (props) => {
       company: 'Amazon',
       date: 'May 2021 - July 2021',
       description: [
-        '- Designed and developed a service backend to manage records excluded from enforcement action (Lambda, API Gateway, DocumentDB, CDK, Guice, Typescript, Java)',
-        '- Deployed the service into production using a multi-stage CI/CD pipeline configured by CDK/TypeScript',
-        '- Implemented Lambda functions triggered by S3 file upload to automate database record creation ',
+        // '- Designed and developed a service backend to manage records excluded from enforcement action (Lambda, API Gateway, DocumentDB, CDK, Guice, Typescript, Java)',
+        // '- Deployed the service into production using a multi-stage CI/CD pipeline configured by CDK/TypeScript',
+        // '- Implemented Lambda functions triggered by S3 file upload to automate database record creation ',
         '- Seller Trust, Abuse, and Risk team'], 
       src: '/amazon.jpg'
     }, 

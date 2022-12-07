@@ -67,7 +67,7 @@ const ProjectCard = (props) => {
                 )})
             }
           </Stack>
-          <Text fontSize={{ base: 'md', md: 'lg', lg: 'xl' }} color={ colorMode === 'dark' ? 'gray.400' : 'gray.800'}>
+          <Text fontSize={{ base: 'md', md: 'lg', lg: 'lg' }} color={ colorMode === 'dark' ? 'gray.400' : 'gray.800'}>
             {props.subtitle}
           </Text>
         </Stack>

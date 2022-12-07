@@ -11,13 +11,13 @@ import ProjectCard from './ProjectCard';
 
 const Work = (props) => {
   const projects = [
-    {
-      title: 'Explorify',
-      tags: ['Passion Project', 'Web Development', 'Prototyping'],
-      subtitle: `Developing a web application that ranks and recommends an artist's songs based on a user's Spotify Profile`,
-      image: '/Explorify_Card.png',
-      link: '/development',
-    },
+    // {
+    //   title: 'Explorify',
+    //   tags: ['Passion Project', 'Web Development', 'Prototyping'],
+    //   subtitle: `Developing a web application that ranks and recommends an artist's songs based on a user's Spotify profile`,
+    //   image: '/Explorify_Card.png',
+    //   link: '/explorify',
+    // },
     {
       title: 'Party Safety App', 
       tags: ['Passion Project', 'Prototyping', 'App Development'], 
