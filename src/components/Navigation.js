@@ -64,7 +64,7 @@ const Navigation = (props) => {
             fontSize={{ base: '5xl', md: '5xl', lg: '6xl' }}
             fontWeight='extrabold'
           >
-            [name]
+            Jenny Tan
           </Text>
         </Link>
       </Link1>
@@ -72,7 +72,7 @@ const Navigation = (props) => {
         style={{ display: isDesktop ? 'flex' : 'none' }}
       />
       <HStack>
-        <Link1 to='/#projects' style={{ display: location === '/' ? 'flex' : 'none'}}>
+        {/* <Link1 to='/#projects' style={{ display: location === '/' ? 'flex' : 'none'}}>
           <Link 
             fontSize={{ base: 'lg', md: 'xl', lg: '2xl' }} 
             pr={{ base: 1, md: 2, lg: 3 }} 
@@ -81,8 +81,8 @@ const Navigation = (props) => {
           >
             Projects
           </Link>
-        </Link1>
-        <Link1 to='/#experience' style={{ display: location === '/' ? 'flex' : 'none'}}>
+        </Link1> */}
+        {/* <Link1 to='/#experience' style={{ display: location === '/' ? 'flex' : 'none'}}>
         <Link 
           fontSize={{ base: 'lg', md: 'xl', lg: '2xl' }} 
           pr={{ base: 1, md: 2, lg: 3 }} 
@@ -101,7 +101,17 @@ const Navigation = (props) => {
           >
             Contact
           </Link>
-        </Link1>
+        </Link1> */}
+        {/* <Link1 style={{ display: location === '/' ? 'flex' : 'none'}}> */}
+          {/* <Link 
+            fontSize={{ base: 'lg', md: 'xl', lg: '2xl' }} 
+            pr={{ base: 1, md: 2, lg: 3 }} 
+            color={colorMode === 'dark' ? 'white' : 'gray.800'}
+            target = "_blank" href={require('./Resume.pdf')} 
+          >
+            Resume
+          </Link> */}
+        {/* </Link1> */}
         <Tooltip label={colorMode === 'dark' ? 'Click for light mode' : 'Click for dark mode'}>
           <Button
             variant='ghost'

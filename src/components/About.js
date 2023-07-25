@@ -16,17 +16,12 @@ const About = (props) => {
       width={{ lg: '66%'}}
       mt={{ base: 14, lg: 20}}
       >
-      <Heading as='h1' pb={{ base: 1, md: 2, lg: 3}} mt={20}>Hi, I'm [name]!</Heading>
+      <Heading as='h1' pb={{ base: 1, md: 2, lg: 3}} mt={20}>Hi, I'm Jenny!</Heading>
       <Text
         fontSize={{ base: 'lg', md: 'xl', lg: '2xl' }}
         color={ colorMode === 'dark' ? 'gray.400' : 'gray.800'}
       >
-        Senior studying Computer Science at {' '}
-        <Text as='b' color={colorMode === 'light' ? 'red.600' : 'red.200'}>
-          <Link target="_blank" rel="noopener noreferrer" href='https://cs.brown.edu/'>
-              Brown
-          </Link> 
-        </Text>. Incoming SWE @{' '}
+        Incoming SWE @{' '}
         <Text as='b' color={colorMode === 'light' ? 'purple.600' : 'purple.200'}>
           <Link target="_blank" rel="noopener noreferrer" href='https://stripe.com/'>
               Stripe
@@ -42,6 +37,12 @@ const About = (props) => {
           <Link target="_blank" rel="noopener noreferrer" href='https://amazon.com/'>
               Amazon
           </Link>
+        </Text>. 
+        Recently studied Computer Science at {' '}
+        <Text as='b' color={colorMode === 'light' ? 'red.600' : 'red.200'}>
+          <Link target="_blank" rel="noopener noreferrer" href='https://cs.brown.edu/'>
+              Brown
+          </Link> 
         </Text>. 
       </Text>
     </Box>

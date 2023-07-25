@@ -46,7 +46,7 @@ const Development = () => {
         <ListItem>Add Pokemon to a Favorites list and view the sum of the HP</ListItem>
       </UnorderedList>
       <Heading size='lg' as='h2' pb={{ base: 1, md: 2, lg: 3 }}>Research</Heading>
-      <Text pb={5}>Currently, the <Link href='https://www.pokemon.com/us/pokedex'>official Pokemon website</Link> 
+      <Text pb={5}>Currently, the <Link href='https://www.pokemon.com/us/pokedex'>official Pokemon website </Link> 
         has a Pokedex page where users can browse and search for Pokemon by name, type, weakness, size, and other characteristics.
         However, there is not a way for users to bookmark Pokemon that they want to reference in the future. I decided to make a website that 
         has a "favorites" feature to solve this need.  

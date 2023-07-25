@@ -34,7 +34,7 @@ const PartySafety = () => {
 
       <Heading size='lg' as='h2' pb={{ base: 1, md: 2, lg: 3 }}>Background</Heading>
       <Text pb={2}>Party safety has become increasingly important on college campuses. 
-      According to a 2019 Association of American Universities survey, 13% of college and graduate students report nonconsensual sexual contact. Parties can often be unsafe due to the use of alcohol.</Text> 
+      According to a 2019 Association of American Universities survey, 13% of college and graduate students report nonconsensual sexual contact. Some of this behavior can occur during parties, and there currently isn't a centralized way to view which locations or organizations have a history of unsafe behavior at parties.</Text> 
       
       <Text pb={5}>My project team at Full Stack at Brown received a request from clients to create a mobile application that allows users to view safety ratings and rate the safety of different locations so that they can make an informed decision about whether to attend a party. I worked as a fullstack engineer and designer along with two other students.</Text>
       
@@ -79,7 +79,7 @@ const PartySafety = () => {
       <UnorderedList pl={{ base: 2, md: 3, lg: 5}}>
         <ListItem>Work with a team to develop a product</ListItem>
         <ListItem>Develop a product from start to finish, including writing product specifications, designing prototypes, database modeling, and implementation</ListItem>
-        <ListItem>Communicate with clients in order to receieve feedback</ListItem>
+        <ListItem>Communicate with clients in order to receive feedback</ListItem>
       </UnorderedList>
     </Box>
     </Center>

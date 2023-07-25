@@ -18,22 +18,22 @@ const Contact = (props) => {
       pt={{ base: 4, md: 10, lg: 20}}
     >
       <Flex align='center' justify='center' direction={{ base: 'column', md: 'row'}}>
-        <Link href='https://github.com/unemployedpangolin015'>
+        <Link href='https://github.com/j-tan871'>
           <Flex align='center' justify='center' px={3} py={1}>
             <FontAwesomeIcon icon={faGithub} />
-            <Text pl={2}>unemployedpangolin015</Text>
+            <Text pl={2}>j-tan871</Text>
           </Flex>
         </Link>
-        <Link href='https://linkedin.com/'>
+        <Link href='https://linkedin.com/in/jenny-l-tan'>
           <Flex align='center' justify='center' px={3} py={1}>
             <FontAwesomeIcon icon={faLinkedin} className='h-7 w-7 mr-3' />
-            <Text pl={2}>[linkedin username]</Text>
+            <Text pl={2}>jenny-l-tan</Text>
           </Flex>
         </Link>
-        <Link href='mailto:jeff_huang@brown.edu'>
+        <Link href='mailto:jenny.tan.0871@gmail.com'>
           <Flex align='center' justify='center' px={3} py={1}>
             <FontAwesomeIcon icon={faEnvelope} className='h-7 w-7 mr-3' />
-            <Text pl={2}>[email]</Text>
+            <Text pl={2}>jenny.tan.0871@gmail.com</Text>
           </Flex>
         </Link>
       </Flex>

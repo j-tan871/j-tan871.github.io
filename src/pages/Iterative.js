@@ -53,32 +53,14 @@ const Iterative = () => {
       <ListItem>Further improve the interface by<Text as='b'> conducting user testing on a final revised prototype</Text></ListItem>
     </UnorderedList>
 
-    <Heading size='lg' as='h2' pb={{ base: 1, md: 2, lg: 3}}>Sketching and Wireframing</Heading>
-    
-    <Heading size='md' as='h3' pb={{ base: 1, md: 2, lg: 3}}>Sketching</Heading>
-    <Text pb={2}>We created 4 different possible designs for Pursuit. In these sketches, we are designing interfaces such as home screen, browsing for experiences or bookings, a screen for an individual experience or booking, help page, etc. in different design settings.</Text>
-    <Grid templateRows='repeat(2, 1fr)' templateColumns='repeat(2, 1fr)' maxW='4xl'>
-      <GridItem rowSpan={1} colSpan={1}>
-        <Center as='b'>Sketch 1</Center>
-        <Image src={process.env.PUBLIC_URL + '/sketch1.png'}/>
-      </GridItem>
-      <GridItem rowSpan={1} colSpan={1}>
-        <Center as='b'>Sketch 2</Center>
-        <Image src={process.env.PUBLIC_URL + '/sketch2.png'}/>
-      </GridItem>
-      <GridItem rowSpan={1} colSpan={1}>
-        <Center as='b'>Sketch 3</Center>
-        <Image src={process.env.PUBLIC_URL + '/sketch3.png'}/>
-      </GridItem>
-      <GridItem rowSpan={1} colSpan={1}>
-        <Center as='b'>Sketch 4</Center>
-        <Image src={process.env.PUBLIC_URL + '/sketch4.png'}/>
-      </GridItem>
-      
-    </Grid>
+    <Heading size='lg' as='h2' pb={{ base: 1, md: 2, lg: 3}}>Research</Heading>
+    <Text pb={5}>Currently, there are marketplaces like Airbnb where users can book lodging. However, there is not a 
+      predominant marketplace where users can book and sell outdoor trips. Pursuit is marketed towards young professionals
+      who may not have the time or resources to lead their own outdoor trip, and may want to hire a guide. </Text>
 
+    <Heading size='lg' as='h2' pb={{ base: 1, md: 2, lg: 3}}>Design Process</Heading>
     <Heading size='md' as='h3' pb={{ base: 1, md: 2, lg: 3}}>Low Fidelity Prototypes</Heading>
-    <Text>Based on the above sketches, we made 5 low-fidelity prototypes:</Text>
+    <Text>We made 5 low-fidelity prototypes:</Text>
     <Image src={process.env.PUBLIC_URL + '/lowfi.png'} maxW={{base: '100%', lg: '4xl'}}/>
 
     <Heading size='md' as='h3' pb={{ base: 1, md: 2, lg: 3}}>High Fidelity Prototypes</Heading>
@@ -135,11 +117,10 @@ const Iterative = () => {
 
     <Text pb={2}>From reviewing the user testing sessions, we obtained the following takeaways:</Text>
     <UnorderedList pb={5}>
-      <ListItem>All users successfully completed the overarching task of browsing outdoor experiences and then booking the Catskills mountain hike with ease. Referring to the numbered tasks above, the success rate for 2 and 3 was 100% with all testers rating the task as "Very Easy".</ListItem>
-      <ListItem>Users understood the back arrow and home button navigation well (with 100% success on task 5 and all testers rating it "Very Easy").</ListItem>
-      <ListItem>Each tester misunderstood the bottom navigation bar, with general confusion on the meanings of the icons. For example, one user interpreted the tent icon as a button for booking experiences, when in reality, it is for booking lodging.</ListItem>
-      <ListItem>While working on task 4, one user was frustrated that there was no page for reviewing already-booked lodging and experiences.</ListItem>
-      <ListItem>Testers appreciated the visual design of the app, particularly the large photos, but some desired additional photos for each experience.</ListItem>
+      <ListItem><Text as='b'>All users successfully completed the overarching task</Text> of browsing outdoor experiences and then booking the Catskills mountain hike with ease. Referring to the numbered tasks above, the success rate for 2 and 3 was 100% with all testers rating the task as "Very Easy".</ListItem>
+      <ListItem><Text as='b'>Users understood the back arrow and home button navigation well</Text> (with 100% success on task 5 and all testers rating it "Very Easy").</ListItem>
+      <ListItem><Text as='b'>Each tester misunderstood the bottom navigation bar</Text>, with general confusion on the meanings of the icons. For example, one user interpreted the tent icon as a button for booking experiences, when in reality, it is for booking lodging.</ListItem>
+      <ListItem><Text as='b'>Testers appreciated the visual design of the app</Text>, particularly the large photos, but some desired additional photos for each experience.</ListItem>
     </UnorderedList>
 
     <Text pb={2}>We were happy to see user success on the given tasks! We were surprised by the confusion on the bottom navigation bar but grateful to have identified areas for improvement from the user testing. If we were to iterate on our designs once more, we would:</Text>
